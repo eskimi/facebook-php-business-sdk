@@ -34,7 +34,6 @@ use FacebookAds\Object\Values\AdAccountTargetingUnifiedLimitTypeValues;
 use FacebookAds\Object\Values\AdAccountTargetingUnifiedModeValues;
 use FacebookAds\Object\Values\AdAccountTargetingUnifiedObjectiveValues;
 use FacebookAds\Object\Values\AdAccountTargetingUnifiedRegulatedCategoriesValues;
-use FacebookAds\Object\Values\AdAccountTargetingUnifiedRegulatedCountriesValues;
 use FacebookAds\Object\Values\AdAccountTargetingUnifiedWhitelistedTypesValues;
 
 /**
@@ -59,7 +58,6 @@ class AdAccountTargetingUnified extends AbstractCrudObject {
     $ref_enums = array();
     $ref_enums['LimitType'] = AdAccountTargetingUnifiedLimitTypeValues::getInstance()->getValues();
     $ref_enums['RegulatedCategories'] = AdAccountTargetingUnifiedRegulatedCategoriesValues::getInstance()->getValues();
-    $ref_enums['RegulatedCountries'] = AdAccountTargetingUnifiedRegulatedCountriesValues::getInstance()->getValues();
     $ref_enums['WhitelistedTypes'] = AdAccountTargetingUnifiedWhitelistedTypesValues::getInstance()->getValues();
     $ref_enums['AppStore'] = AdAccountTargetingUnifiedAppStoreValues::getInstance()->getValues();
     $ref_enums['Objective'] = AdAccountTargetingUnifiedObjectiveValues::getInstance()->getValues();

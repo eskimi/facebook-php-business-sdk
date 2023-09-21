@@ -102,29 +102,6 @@ class AdStudyObjective extends AbstractCrudObject {
     return $pending ? $request : $request->execute();
   }
 
-  public function getBrandRequests(array $fields = array(), array $params = array(), $pending = false) {
-    $this->assureId();
-
-    $param_types = array(
-    );
-    $enums = array(
-    );
-
-    $request = new ApiRequest(
-      $this->api,
-      $this->data['id'],
-      RequestInterface::METHOD_GET,
-      '/brand_requests',
-      new BrandRequest(),
-      'EDGE',
-      BrandRequest::getFieldsEnum()->getValues(),
-      new TypeChecker($param_types, $enums)
-    );
-    $request->addParams($params);
-    $request->addFields($fields);
-    return $pending ? $request : $request->execute();
-  }
-
   public function getCustomConversions(array $fields = array(), array $params = array(), $pending = false) {
     $this->assureId();
 
@@ -164,29 +141,6 @@ class AdStudyObjective extends AbstractCrudObject {
       new OfflineConversionDataSet(),
       'EDGE',
       OfflineConversionDataSet::getFieldsEnum()->getValues(),
-      new TypeChecker($param_types, $enums)
-    );
-    $request->addParams($params);
-    $request->addFields($fields);
-    return $pending ? $request : $request->execute();
-  }
-
-  public function getPartnerPrivateStudies(array $fields = array(), array $params = array(), $pending = false) {
-    $this->assureId();
-
-    $param_types = array(
-    );
-    $enums = array(
-    );
-
-    $request = new ApiRequest(
-      $this->api,
-      $this->data['id'],
-      RequestInterface::METHOD_GET,
-      '/partner_private_studies',
-      new Business(),
-      'EDGE',
-      Business::getFieldsEnum()->getValues(),
       new TypeChecker($param_types, $enums)
     );
     $request->addParams($params);

@@ -37,6 +37,5 @@ use FacebookAds\Enum\AbstractEnum;
  */
 class ApplicationLoggingSourceValues extends AbstractEnum {
 
-  const DETECTION = 'DETECTION';
   const MESSENGER_BOT = 'MESSENGER_BOT';
 }

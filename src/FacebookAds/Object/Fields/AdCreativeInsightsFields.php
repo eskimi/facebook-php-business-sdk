@@ -41,7 +41,7 @@ class AdCreativeInsightsFields extends AbstractEnum {
 
   public function getFieldTypes() {
     return array(
-      'aesthetics' => 'list<map<string, string>>',
+      'aesthetics' => 'map<string, string>',
     );
   }
 }

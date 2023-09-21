@@ -125,9 +125,9 @@ class User extends AbstractCrudObject {
 
     $param_types = array(
       'business_app' => 'int',
+      'is_permanent_token' => 'bool',
       'page_id' => 'string',
       'scope' => 'list<Permission>',
-      'set_token_expires_in_60_days' => 'bool',
     );
     $enums = array(
     );
@@ -201,9 +201,9 @@ class User extends AbstractCrudObject {
       $this->data['id'],
       RequestInterface::METHOD_POST,
       '/accounts',
-      new AbstractCrudObject(),
+      new Page(),
       'EDGE',
-      array(),
+      Page::getFieldsEnum()->getValues(),
       new TypeChecker($param_types, $enums)
     );
     $request->addParams($params);

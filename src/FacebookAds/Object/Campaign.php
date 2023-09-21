@@ -490,6 +490,7 @@ class Campaign extends AbstractArchivableCrudObject {
       'start_time' => 'datetime',
       'status' => 'status_enum',
       'stop_time' => 'datetime',
+      'upstream_events' => 'map',
     );
     $enums = array(
       'bid_strategy_enum' => CampaignBidStrategyValues::getInstance()->getValues(),

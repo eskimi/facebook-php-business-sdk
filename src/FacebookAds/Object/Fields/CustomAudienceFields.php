@@ -94,7 +94,6 @@ class CustomAudienceFields extends AbstractEnum {
   const PARTNER_REFERENCE_KEY = 'partner_reference_key';
   const PREFILL = 'prefill';
   const PRODUCT_SET_ID = 'product_set_id';
-  const USE_IN_CAMPAIGNS = 'use_in_campaigns';
   const VIDEO_GROUP_IDS = 'video_group_ids';
 
   public function getFieldTypes() {
@@ -156,7 +155,6 @@ class CustomAudienceFields extends AbstractEnum {
       'partner_reference_key' => 'string',
       'prefill' => 'bool',
       'product_set_id' => 'string',
-      'use_in_campaigns' => 'bool',
       'video_group_ids' => 'list<string>',
     );
   }

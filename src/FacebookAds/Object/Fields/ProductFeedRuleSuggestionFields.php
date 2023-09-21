@@ -44,7 +44,7 @@ class ProductFeedRuleSuggestionFields extends AbstractEnum {
   public function getFieldTypes() {
     return array(
       'attribute' => 'string',
-      'params' => 'list<map<string, string>>',
+      'params' => 'map<string, string>',
       'type' => 'string',
     );
   }

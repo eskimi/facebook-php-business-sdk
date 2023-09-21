@@ -84,7 +84,6 @@ class PrivateLiftStudyInstance extends AbstractCrudObject {
 
     $param_types = array(
       'operation' => 'operation_enum',
-      'run_id' => 'string',
     );
     $enums = array(
       'operation_enum' => PrivateLiftStudyInstanceOperationValues::getInstance()->getValues(),
